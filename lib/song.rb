@@ -48,4 +48,8 @@ class Song
     song.artist_name = file.split(" - ")[0]
     song
   end
+
+  def create_from_filename
+    self.all << self.new_from_filename(file)
+  end
 end
