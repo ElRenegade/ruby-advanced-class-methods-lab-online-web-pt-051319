@@ -39,6 +39,6 @@ class Song
     else
       self.find_by_name
     end
-    
+
   end
 end
