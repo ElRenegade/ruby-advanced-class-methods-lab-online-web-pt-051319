@@ -38,6 +38,6 @@ class Song
      self.create_by_name(name)
   end
   def self.alphabetical
-    self.all.sort{|a,b| a<=>b}
+    self.all.sort_by{|n| n.name}
   end
 end
