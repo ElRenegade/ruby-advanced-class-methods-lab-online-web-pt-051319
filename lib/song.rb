@@ -49,7 +49,9 @@ class Song
     song
   end
 
-  def create_from_filename
-    self.all << self.new_from_filename(file)
+  def self.create_from_filename(file)
+    self.new_from_filename(name)
+    self.all << song
+    song
   end
 end
