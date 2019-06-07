@@ -29,9 +29,9 @@ class Song
     song
   end
 
-  # def self.find_by_name(name)
-  #   song = self.new
-  #   song.name = name
-  #   name.find{|song| song}
-  # end
+  def self.find_by_name(name)
+    song = self.new
+    song.name = name
+    song.name.find{|x| song  }
+  end
 end
