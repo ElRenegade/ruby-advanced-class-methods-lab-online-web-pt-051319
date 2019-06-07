@@ -42,7 +42,9 @@ class Song
     self.all.sort_by{|n| n.name}
   end
 
-  def self.new_from_filename
-
+  def self.new_from_filename(file)
+    song = slef.new
+    song.name = file.split(" - ",".").pop
+    song.artist_name = name.split(" - ")[0]
   end
 end
