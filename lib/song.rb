@@ -43,7 +43,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    song = slef.new
+    song = self.new
     song.name = file.split(" - ",".").pop
     song.artist_name = name.split(" - ")[0]
   end
