@@ -16,7 +16,7 @@ class Song
     song
   end
 
-  def slef.new_by_name(s_name)
+  def self.new_by_name(s_name)
     song = self.new
     song.s_name = name
     song
